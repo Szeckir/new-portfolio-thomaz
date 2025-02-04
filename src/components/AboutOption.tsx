@@ -11,7 +11,7 @@ interface AboutOptionProps {
 
 function AboutOption(params: AboutOptionProps) {
     return (
-        <div className='m-8 items-center'>
+        <div className='items-center'>
             <div className='flex'>
                 <Search size={28} className='' />
                 <div className='items-center text-left ml-2'>
