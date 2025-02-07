@@ -1,11 +1,9 @@
 import AboutOption from "@/components/AboutOption"
-import { aboutOptions } from "@/constants"
+import { aboutItems } from "@/constants"
 import { Fade } from "react-awesome-reveal"
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
-import Button from '@mui/material/Button';
 import { useState } from "react";
-import { Typography } from "@mui/material";
 import { Minimize2 } from "lucide-react";
 
 function About() {
@@ -26,7 +24,7 @@ function About() {
         <div>
             <ul>
                 {
-                    Object.values(aboutOptions).map((element, index) => (
+                    Object.values(aboutItems).map((element, index) => (
                         <li key={index} onClick={() => handleOpen(element)} className="hover:cursor-pointer hover:bg-slate-50 m-6 p-2 rounded-md">
                             <Fade duration={3000}>
                                 <AboutOption text={element.text} description={element.description} url={element.url} title={element.title}></AboutOption>
@@ -43,32 +41,34 @@ function About() {
                         onClose={handleClose}
                         aria-labelledby="parent-modal-title"
                         aria-describedby="parent-modal-description"
-                        className="text-center items-center justify-center flex"
+                        className="text-center items-center justify-center flex  "
                     >
                         <Fade>
                             <Box
                                 borderColor={"white"}
                                 padding={3}
                                 bgcolor={"white"}
-                                borderRadius={4}>
-                                <div className="flex gap-2 text-center items-center">
-                                    <Minimize2 className="hover:bg-slate-100 rounded-full p-1 hover:cursor-pointer" size={32} onClick={() => setOpen(false)} />
-                                    <p className="font-bold text-xl">{selectedAbout.title}</p>
+                                borderRadius={4}
+                            >
+                                <div className="w-[100vh] block">
+                                    <div className="flex gap-2 text-center items-center ">
+                                        <Minimize2 className="hover:bg-slate-100 rounded-full p-1 hover:cursor-pointer" size={32} onClick={() => setOpen(false)} />
+                                        <p className="font-bold text-xl">{selectedAbout.title}</p>
+                                    </div>
+                                    <div className="text-left m-2">
+                                        <p>{selectedAbout.bigDescription}</p>
+                                        <p>textoooo</p>
+                                    </div>
+                                    {
+                                        selectedAbout.photos && (
+                                            <div className="flex gap-4 w-[15vw]">
+                                                <img src={selectedAbout.photos.photo1} alt="Foto Thomaz Szeckir" className="rounded-md" />
+                                                <img src={selectedAbout.photos.photo2} alt="Foto Thomaz Szeckir" className="rounded-md"></img>
+                                                <img src={selectedAbout.photos.photo3} alt="Foto Thomaz Szeckir" className="rounded-md"></img>
+                                            </div>
+                                        )
+                                    }
                                 </div>
-                                <div className="text-left m-2">
-                                    <p>texttooooooo</p>
-                                    <p>textoooo</p>
-                                </div>
-                                {
-                                    selectedAbout.photos && (
-                                        <div className="flex w-48 gap-4">
-                                            <img src={selectedAbout.photos.photo1} alt="Foto Thomaz Szeckir" />
-                                            <img src={selectedAbout.photos.photo2} alt="Foto Thomaz Szeckir" ></img>
-                                            <img src={selectedAbout.photos.photo3} alt="Foto Thomaz Szeckir" ></img>
-                                        </div>
-                                    )
-                                }
-
                             </Box>
                         </Fade>
                     </Modal>
