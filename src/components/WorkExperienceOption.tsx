@@ -11,7 +11,7 @@ interface WorkParams {
 
 function WorkExperienceOption(params: WorkParams) {
   return (
-    <div className='flex p-4 hover:cursor-pointer hover:bg-slate-50 m-4 rounded-md w-[90vw]' >
+    <div className='flex p-4 hover:cursor-pointer hover:bg-slate-50 m-4 rounded-md w-[90vw] shadow-md' >
       <div className=''>
         <p className='font-bold text-nowrap'>{params.date}</p>
       </div>
@@ -25,7 +25,7 @@ function WorkExperienceOption(params: WorkParams) {
         <ul className='flex gap-1 mt-4'>
           {
             params.programmingLanguages.map((element, index) => (
-              <li className='opacity-80 bg-sky-800 p-2 text-white rounded-full'>{element}</li>
+              <li className='font-thin bg-slate-800 p-2 text-white rounded-xl'>{element}</li>
             ))
           }
         </ul>

@@ -1,6 +1,7 @@
 import aboutphoto from "../../public/images/AboutPhoto.jpeg"
 import aboutphoto1 from "../../public/images/AboutPhoto2.jpeg"
 import aboutphoto2 from "../../public/images/AboutPhoto3.jpeg"
+import boogiesPhoto from "../../public/images/boogiesbarber.png"
 
 export const menuOptions = {
     Home: {
@@ -81,4 +82,52 @@ export const workItems = {
         ],
         company: "Testeee"
     },
+}
+
+export const projects = {
+    project1: {
+        github: "https://github.com/Szeckir/Boogies-barbershop",
+        url: "https://boogies-barbershop.vercel.app/",
+        name: "WebSite para BoogiesBarbershop",
+        description: "Site criado com intuito recreativo e sendo utilizado hoje em dia para minha Barbearia.",
+        programmingLanguages: [
+            'Java', 'PHP', 'Linux', "C++"
+        ],
+        images: {
+            photo1: boogiesPhoto
+        }
+    },
+    project2: {
+        github: "link.com",
+        name: "API Profissional",
+        description: "o projeto foi sobre tal coisa e tal coisa.",
+        programmingLanguages: [
+            'Java', 'PHP', 'Linux', "C++"
+        ],
+        images: {
+            photo1: boogiesPhoto
+        }
+    },
+    project3: {
+        github: "link.com",
+        name: "API Profissional",
+        description: "o projeto foi sobre tal coisa e tal coisa.",
+        programmingLanguages: [
+            'Java', 'PHP', 'Linux', "C++"
+        ],
+        images: {
+            photo1: boogiesPhoto
+        }
+    },
+    project4: {
+        github: "link.com",
+        name: "API Profissional",
+        description: "o projeto foi sobre tal coisa e tal coisa.",
+        programmingLanguages: [
+            'Java', 'PHP', 'Linux', "C++"
+        ],
+        images: {
+            photo1: boogiesPhoto
+        }
+    }
 }
