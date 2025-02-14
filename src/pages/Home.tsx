@@ -1,8 +1,6 @@
 import { HyperText } from "@/components/ui/hyper-text"
 import { Search } from 'lucide-react';
 import { TypingAnimation } from "@/components/ui/typing-animation";
-import { cn } from "@/lib/utils";
-import { InteractiveGridPattern } from "@/components/ui/interactive-grid-pattern";
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 

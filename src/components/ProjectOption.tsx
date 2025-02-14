@@ -11,7 +11,7 @@ interface projectParams {
 
 function ProjectOption(params: projectParams) {
     return (
-        <div className="rounded-md m-2 p-4 w-[50vh] shadow-md" >
+        <div className="rounded-md m-2 p-4 w-[50vh] shadow-md hover:shadow-xl hover:cursor-pointer" >
             <img src={params.image} className="w-[48vh] rounded-md" />
             <div className="p-2">
                 <h2 className="font-bold text-xl">{params.name}</h2>

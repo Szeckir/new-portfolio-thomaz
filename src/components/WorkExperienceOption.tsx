@@ -6,31 +6,34 @@ interface WorkParams {
   jobTitle: string,
   jobDescription: string,
   programmingLanguages: string[],
-  company: string
+  company: string,
+  link: string
 }
 
 function WorkExperienceOption(params: WorkParams) {
   return (
-    <div className='flex p-4 hover:cursor-pointer hover:bg-slate-50 m-4 rounded-md w-[90vw] shadow-md' >
-      <div className=''>
-        <p className='font-bold text-nowrap'>{params.date}</p>
-      </div>
-      <div className='ml-36'>
-        <div className='flex items-center'>
-          <p className='text-2xl font-bold items-center'>{params.jobTitle}</p>
-          <Minus />
-          <p className='text-xl opacity-50 font-semibold items-center'>{params.company}</p>
+    <a href={params.link} target="_blank">
+      <div className='flex p-4 hover:cursor-pointer m-4 rounded-md w-[90vw] shadow-sm hover:shadow-md'>
+        <div className=''>
+          <p className='font-bold text-nowrap'>{params.date}</p>
         </div>
-        <p className='opacity-80'>{params.jobDescription}</p>
-        <ul className='flex gap-1 mt-4'>
-          {
-            params.programmingLanguages.map((element, index) => (
-              <li className='font-thin bg-slate-800 p-2 text-white rounded-xl'>{element}</li>
-            ))
-          }
-        </ul>
+        <div className='ml-36'>
+          <div className='flex items-center'>
+            <p className='text-2xl font-bold items-center'>{params.jobTitle}</p>
+            <Minus />
+            <p className='text-xl opacity-50 font-semibold items-center'>{params.company}</p>
+          </div>
+          <p className='opacity-80'>{params.jobDescription}</p>
+          <ul className='flex gap-1 mt-4'>
+            {
+              params.programmingLanguages.map((element, index) => (
+                <li className='font-thin bg-slate-800 p-2 text-white rounded-xl'>{element}</li>
+              ))
+            }
+          </ul>
+        </div>
       </div>
-    </div>
+    </a>
   )
 }
 

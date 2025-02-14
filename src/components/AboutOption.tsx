@@ -11,7 +11,7 @@ interface AboutOptionProps {
 
 function AboutOption(params: AboutOptionProps) {
     return (
-        <div className='items-center'>
+        <div className='items-center hover:cursor-pointer w-[90vw] shadow-sm hover:shadow-md p-4  rounded-md'>
             <div className='flex'>
                 <Search size={28} className='' />
                 <div className='items-center text-left ml-2'>

@@ -20,10 +20,6 @@ export const menuOptions = {
         title: "Projects",
         page: "/Projects"
     },
-    Skills: {
-        title: "Skills",
-        page: "/Skills"
-    }
 }
 
 export const aboutItems = {
@@ -62,7 +58,8 @@ export const workItems = {
         programmingLanguages: [
             'JavaScript', 'React', 'Java', "C++"
         ],
-        company: "Apple"
+        company: "Orpen",
+        link: "https://www.orpen.com.br/"
     },
     Job2: {
         date: "2017-2025",

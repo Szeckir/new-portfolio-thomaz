@@ -17,7 +17,6 @@ function About() {
 
     const handleClose = () => {
         setOpen(false);
-        console.log("trying close");
     };
 
     return (
@@ -25,7 +24,7 @@ function About() {
             <ul>
                 {
                     Object.values(aboutItems).map((element, index) => (
-                        <li key={index} onClick={() => handleOpen(element)} className="hover:cursor-pointer hover:bg-slate-50 m-6 p-2 rounded-md">
+                        <li key={index} onClick={() => handleOpen(element)} className="m-6 p-2">
                             <Fade duration={3000}>
                                 <AboutOption text={element.text} description={element.description} url={element.url} title={element.title}></AboutOption>
                             </Fade>
