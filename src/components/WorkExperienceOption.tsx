@@ -1,6 +1,3 @@
-import { ChevronsRight, MoveUpRight, Minus, Terminal } from 'lucide-react'
-import React from 'react'
-
 interface WorkParams {
   date: string,
   jobTitle: string,
@@ -26,7 +23,7 @@ function WorkExperienceOption(params: WorkParams) {
           <ul className='flex gap-1 mt-4'>
             {
               params.programmingLanguages.map((element, index) => (
-                <li className='font-thin bg-slate-800 p-2 text-white rounded-xl'>{element}</li>
+                <li className='font-thin bg-slate-800 p-2 text-white rounded-xl' key={index}>{element}</li>
               ))
             }
           </ul>

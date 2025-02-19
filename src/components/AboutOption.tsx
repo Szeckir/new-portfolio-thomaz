@@ -1,6 +1,4 @@
-import React from 'react'
 import { Search } from 'lucide-react'
-import { Fade } from "react-awesome-reveal";
 
 interface AboutOptionProps {
     description: string;
