@@ -71,24 +71,6 @@ export const workItems = {
         company: "Orpen",
         link: "https://www.orpen.com.br"
     },
-    Job3: {
-        date: "2017-2025",
-        jobTitle: "title job",
-        jobDescription: "text text",
-        programmingLanguages: [
-            'Java', 'PHP', 'Linux', "C++"
-        ],
-        company: "Testeee"
-    },
-    Job4: {
-        date: "2017-2025",
-        jobTitle: "",
-        jobDescription: "text text",
-        programmingLanguages: [
-            'Java', 'PHP', 'Linux', "C++"
-        ],
-        company: "Testeee"
-    },
 }
 
 export const projects = {
@@ -104,37 +86,4 @@ export const projects = {
             photo1: boogiesPhoto
         }
     },
-    project2: {
-        github: "link.com",
-        name: "API Profissional",
-        description: "o projeto foi sobre tal coisa e tal coisa.",
-        programmingLanguages: [
-            'Java', 'PHP', 'Linux', "C++"
-        ],
-        images: {
-            photo1: boogiesPhoto
-        }
-    },
-    project3: {
-        github: "link.com",
-        name: "API Profissional",
-        description: "o projeto foi sobre tal coisa e tal coisa.",
-        programmingLanguages: [
-            'Java', 'PHP', 'Linux', "C++"
-        ],
-        images: {
-            photo1: boogiesPhoto
-        }
-    },
-    project4: {
-        github: "link.com",
-        name: "API Profissional",
-        description: "o projeto foi sobre tal coisa e tal coisa.",
-        programmingLanguages: [
-            'Java', 'PHP', 'Linux', "C++"
-        ],
-        images: {
-            photo1: boogiesPhoto
-        }
-    }
 }
