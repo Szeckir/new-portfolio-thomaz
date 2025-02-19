@@ -24,20 +24,20 @@ export const menuOptions = {
 
 export const aboutItems = {
     Sobre: {
-        description: "Quem eu sou",
-        url: "https://quem-eu-sou.com.br",
-        title: "Conheça mais sobre mim",
-        text: "Um texto é uma ocorrência linguística, escrita ou falada de qualquer extensão, dotada de unidade sociocomunicativa, semântica e formal.É uma unidade de linguagem em uso",
+        description: "Who I am",
+        url: "https://who-i-amm.com",
+        title: "Get to Know More About Me",
+        text: "My name is Thomaz Gomes Szeckir, I am 20 years old and I am completely in love with technologies...",
         photos: {
             photo1: aboutphoto,
             photo2: aboutphoto1,
             photo3: aboutphoto2
         },
-        bigDescription: "I have hands-on experience designing and implementing impactful projects, including building a web page for AI integrations from scratch, delivering responsive and user-friendly interfaces, and contributing to system monitoring and optimization using tools like Docker, SQL, and PM2. My technical stack spans React, React Native, JavaScript, Java, C++, Tailwind CSS, and more. "
+        bigDescription: "Hello, my name is Thomaz Gomes Szeckir"
     },
     Portfolio: {
-        description: "Meus Hoobies",
-        url: "https://meus-hoobies.com.br",
+        description: "My Hoobies",
+        url: "https://my-hoobies.com",
         title: "Descubra meus hoobies",
         text: "...",
         bigDescription: "I have hands-on experience designing and implementing impactful projects, including building a web page for AI integrations from scratch, delivering responsive and user-friendly interfaces, and contributing to system monitoring and optimization using tools like Docker, SQL, and PM2. My technical stack spans React, React Native, JavaScript, Java, C++, Tailwind CSS, and more."
@@ -52,16 +52,26 @@ export const aboutItems = {
 
 export const workItems = {
     Job1: {
-        date: "2017-2025",
-        jobTitle: "title job",
+        date: "2024-Present",
+        jobTitle: "Content Creator",
         jobDescription: "I have hands-on experience designing and implementing impactful projects, including building a web page for AI integrations from scratch, delivering responsive and user-friendly interfaces, and contributing to system monitoring and optimization using tools like Docker, SQL, and PM2. My technical stack spans React, React Native, JavaScript, Java, C++, Tailwind CSS, and more.",
         programmingLanguages: [
             'JavaScript', 'React', 'Java', "C++"
         ],
-        company: "Orpen",
-        link: "https://www.orpen.com.br/"
+        company: "Youtube",
+        link: "https://www.youtube.com/@Algoritmo_Cafe"
     },
     Job2: {
+        date: "2023-2024",
+        jobTitle: "Front-End Developer",
+        jobDescription: "text text",
+        programmingLanguages: [
+            'JavaScript', 'HTML', 'CSS'
+        ],
+        company: "Orpen",
+        link: "https://www.orpen.com.br"
+    },
+    Job3: {
         date: "2017-2025",
         jobTitle: "title job",
         jobDescription: "text text",
@@ -70,9 +80,9 @@ export const workItems = {
         ],
         company: "Testeee"
     },
-    Job3: {
+    Job4: {
         date: "2017-2025",
-        jobTitle: "title job",
+        jobTitle: "",
         jobDescription: "text text",
         programmingLanguages: [
             'Java', 'PHP', 'Linux', "C++"

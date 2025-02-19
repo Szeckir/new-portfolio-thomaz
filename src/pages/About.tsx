@@ -56,7 +56,6 @@ function About() {
                                     </div>
                                     <div className="text-left m-2">
                                         <p>{selectedAbout.bigDescription}</p>
-                                        <p>textoooo</p>
                                     </div>
                                     {
                                         selectedAbout.photos && (

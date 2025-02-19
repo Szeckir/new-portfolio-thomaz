@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { Fade } from "react-awesome-reveal"
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
-import { Linkedin } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 
 const PortfolioNavbar = () => {
     const [activeTab, setActiveTab] = useState("Home");
@@ -66,11 +66,17 @@ const PortfolioNavbar = () => {
                                 bgcolor={"white"}
                                 borderRadius={2}
                             >
-                                <div className="w-[100vh] h-[30vh] block">
-                                    <div className='flex items-center justify-center '>
-                                        <div className='rounded-full bg-slate-900 w-[30vh] h-[30vh] '>
-
-                                        </div>
+                                <div className="w-[90vh] h-[30vh] block">
+                                    <div className='flex items-center justify-center gap-4'>
+                                        <a target='_blank' href="https://www.linkedin.com/in/thomaz-szeckir/" className='rounded-full bg-slate-900 w-[30vh] h-[30vh] flex items-center justify-center'>
+                                            <Linkedin size={140} className='text-white' />
+                                        </a>
+                                        <a target='_blank' href="https://github.com/Szeckir" className='rounded-full bg-slate-900 w-[30vh] h-[30vh] flex items-center justify-center'>
+                                            <Github size={140} className='text-white' />
+                                        </a>
+                                        <a target='_blank' href="" className='rounded-full bg-slate-900 w-[30vh] h-[30vh] flex items-center justify-center'>
+                                            <Mail size={140} className='text-white' />
+                                        </a>
                                     </div>
                                 </div>
                             </Box>
